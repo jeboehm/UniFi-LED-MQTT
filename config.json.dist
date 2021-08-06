@@ -1,0 +1,15 @@
+{
+    "ap": {
+        "kitchen": {
+            "host": "192.168.1.21",
+            "username": "admin",
+            "password": ""
+        },
+        "livingroom": {
+            "host": "192.168.1.22",
+            "username": "admin",
+            "password": ""
+        }
+    },
+    "mqtt": "mqtt://192.168.1.251"
+}

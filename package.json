@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mqtt": "^4.2.8",
+    "simple-ssh": "^1.0.0"
+  },
+  "scripts": {
+    "server": "node index.js"
+  }
+}

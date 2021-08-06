@@ -1,0 +1,29 @@
+{
+    "accessory": "mqttthing",
+    "type": "lightbulb",
+    "name": "UniFi Living Room",
+    "adaptiveLighting": false,
+    "integerValue": true,
+    "topics": {
+      "getOn": {
+        "topic": "unifi/livingroom/power"
+      },
+      "setOn": {
+        "topic": "unifi/livingroom/set_power"
+      },
+      "getRGB": {
+        "topic": "unifi/livingroom/color"
+      },
+      "getBrightness": {
+        "topic": "unifi/livingroom/brightness",
+        "apply": "return Math.round(parseInt(message) / 2.55)"
+      },
+      "setRGB": {
+        "topic": "unifi/livingroom/set_color"
+      },
+      "setBrightness": {
+        "topic": "unifi/livingroom/set_brightness",
+        "apply": "return Math.round(message * 2.55)"
+      }
+    }
+  }
